@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+;
+
+
+ Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
+
+
+ Route::get('/cities/{id}', ['uses' => 'HomeController@cities']);
+ Route::get('/areas/{id}', ['uses' => 'HomeController@areas']);
+ Route::get('/companies/{id}', ['uses' => 'HomeController@companies']);
+ Route::get('/brands/{id}', ['uses' => 'HomeController@brands']);
+ Route::get('/branches/{id}', ['uses' => 'HomeController@branches']);
+ Route::get('/stands/{id}', ['uses' => 'HomeController@stands']);
