@@ -8,6 +8,12 @@
       axios.get('{{url("/cities/")}}' + '/'+ SelectedId)
             .then(function(response) {
                 $('#cities').html(response.data);
+                $('#areas').html('<option disabled selected>select area</option>');
+                $('#companies').html('<option disabled selected>select company</option>');
+                $('#brands').html('<option disabled selected>select brand</option>');
+                $('#branches').html('<option disabled selected>select branch</option>');
+                $('#stands').html('<option disabled selected>select stand</option>');
+
             });
     }
   });
@@ -20,6 +26,10 @@
       axios.get('{{url("/areas/")}}' + '/'+ SelectedId)
             .then(function(response) {
                 $('#areas').html(response.data);
+                $('#companies').html('<option disabled selected>select company</option>');
+                $('#brands').html('<option disabled selected>select brand</option>');
+                $('#branches').html('<option disabled selected>select branch</option>');
+                $('#stands').html('<option disabled selected>select stand</option>');
             });
     }
   });
@@ -31,6 +41,9 @@
       axios.get('{{url("/companies/")}}' + '/'+ SelectedId)
             .then(function(response) {
                 $('#companies').html(response.data);
+                $('#brands').html('<option disabled selected>select brand</option>');
+                $('#branches').html('<option disabled selected>select branch</option>');
+                $('#stands').html('<option disabled selected>select stand</option>');
             });
     }
   });
@@ -42,6 +55,8 @@
       axios.get('{{url("/brands/")}}' + '/'+ SelectedId)
             .then(function(response) {
                 $('#brands').html(response.data);
+                $('#branches').html('<option disabled selected>select branch</option>');
+                $('#stands').html('<option disabled selected>select stand</option>');
             });
     }
   });
@@ -53,6 +68,8 @@
       axios.get('{{url("/branches/")}}' + '/'+ SelectedId)
             .then(function(response) {
                 $('#branches').html(response.data);
+                $('#stands').html('<option disabled selected>select stand</option>');
+
             });
     }
   });
