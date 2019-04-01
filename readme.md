@@ -3,7 +3,7 @@ This project built using **laravel 5.5**, so your php version must be >= **7.0**
 
 ## Installation
 1. Clone the source code. `git clone https://github.com/embabby/Dropdown-Form.git`
-2. Go to inside the project. `cd blog`
+2. Go to inside the project. `cd Dropdown-Form`
 3. Run `composer install` to install all the dependencies.
 4. Copy configrations file. `cp .env.example .env`
 5. Create a new database.
